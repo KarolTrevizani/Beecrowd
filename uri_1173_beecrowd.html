@@ -1,0 +1,28 @@
+<h1>Problema</h1>
+<p>Leia um valor e faça um programa que coloque o valor lido na primeira posição de um vetor N[10]. 
+    Em cada posição subsequente, coloque o dobro do valor da posição anterior. 
+    Por exemplo, se o valor lido for 1, os valores do vetor devem ser 1,2,4,8 e assim sucessivamente. 
+    Mostre o vetor em seguida.</p>
+
+<h2>Entrada</h2>
+<p>A entrada contém um valor inteiro (V<=50).</p>
+
+<h2>Saída</h2>
+<p>Para cada posição do vetor, escreva "N[i] = X", onde i é a posição do vetor e X é o valor armazenado na posição i. 
+    O primeiro número do vetor N (N[0]) irá receber o valor de V.</p>
+
+<script>
+
+    // var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+    // var lines = input.split('\n');
+    // var prompt = function(texto) { return lines.shift();};
+    var N = []
+    var n = parseInt(prompt('Digite um número entre 1 e 50: '))
+    if (n != 0 && n <= 50){
+        for (i = 0; i < 10; i++){
+            N.push(n)
+            n *= 2
+            console.log(`N[${i}] = ${N[i]}`)
+        }
+    }
+</script>

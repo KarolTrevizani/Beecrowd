@@ -1,0 +1,26 @@
+<h1>Problema</h1>
+<p>Faça um programa que leia um vetor A[100]. No final, mostre todas as posições do vetor que 
+    armazenam um valor menor ou igual a 10 e o valor armazenado em cada uma das posições.</p>
+
+<h2>Entrada</h2>
+<p>A entrada contém 100 valores, podendo ser inteiros, reais, positivos ou negativos.</p>
+
+<h2>Saída</h2>
+<p>Para cada valor do vetor menor ou igual a 10, escreva "A[i] = x", onde i é a posição do vetor e x é 
+    o valor armazenado na posição, com uma casa após o ponto decimal.</p>
+
+<script>
+
+    // var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+    // var lines = input.split('\n');
+    // var prompt = function(texto) { return lines.shift();};
+    var A = []
+    for(i = 0; i < 100; i++){
+        var n = parseFloat(prompt('Digite o número: '))
+        A.push(n)
+        if (n <= 10){
+            console.log(`A[${i}] = ${(A[i]).toFixed(1)}`)
+        }
+    }
+
+</script>

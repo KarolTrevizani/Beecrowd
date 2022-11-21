@@ -1,0 +1,50 @@
+<h1>Problema</h1>
+<p>Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. 
+    Em seguida, calcule e mostre a soma ou a média considerando somente aqueles elementos que estão acima 
+    da diagonal principal da matriz, conforme ilustrado abaixo (área verde).</p>
+
+<h2>Entrada</h2>
+<p>A primeira linha de entrada contem um único caractere Maiúsculo O ('S' ou 'M'), indicando a operação (Soma ou Média) 
+    que deverá ser realizada com os elementos da matriz. Seguem os 144 valores de ponto flutuante que compõem a matriz.</p>
+
+<h2>Saída</h2>
+<p>Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto decimal.</p>
+
+<script>
+
+    // var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+    // var lines = input.split('\n');
+    // var prompt = function(texto) { return lines.shift();};
+    var oper = prompt('Qual a operacão - Soma(S) ou Media(M): ')
+    var matriz = []
+    // matriz
+    for (i = 0; i <= 11; i++){
+        var linha = []
+        for (p = 0; p <= 11; p++){
+            var n = parseFloat(prompt('Digite os elementos da linha: '))
+            linha.push(n)
+        }
+        matriz.push(linha)
+        linha = []
+    }
+    // operacões
+    var soma = 0
+    var contador = 0
+    var c = 1
+    var a = 1
+    for (l = 11; l > 0; l--){
+        c = a
+        for (c ; c <= 11; c++){
+            soma += matriz[l][c]
+            contador ++
+        }
+        a ++
+    }
+    if (oper == 'S'){
+        console.log(soma.toFixed(1))
+    }
+    else if (oper == 'M'){
+        console.log((soma / contador).toFixed(1))
+    }
+
+</script>

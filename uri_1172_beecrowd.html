@@ -1,0 +1,31 @@
+<h1>Problema</h1>
+<p>Faça um programa que leia um vetor X[10]. 
+    Substitua a seguir, todos os valores nulos e negativos do vetor X por 1. 
+    Em seguida mostre o vetor X.</p>
+
+<h2>Entrada</h2>
+<p>A entrada contém 10 valores inteiros, podendo ser positivos ou negativos.</p>
+
+<h2>Saída</h2>
+<p>Para cada posição do vetor, escreva "X[i] = x", onde i é a posição do vetor e x é o valor armazenado naquela posição.</p>
+
+<script>
+// var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+// var lines = input.split('\n');
+// var prompt = function(texto) { return lines.shift();};
+var X = []
+
+for (i = 1; i <= 10; i++){
+    let num = parseInt(prompt('Digite o número: '))
+    if (num > 0){
+        X.push(num)
+    }else{
+        X.push(1)
+    }
+}
+for (i = 0; i < X.length; i++){
+    a = X[i]
+    console.log(`X[${i}] = ${a}`)
+}
+
+</script>
