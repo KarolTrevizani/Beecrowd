@@ -1,6 +1,6 @@
-# Exercícios de Lógica da plataforma Beecrowd
+# Exercícios de Lógica da plataforma Beecrowd ˆˆ
 
-No arquivo encontram-se as resolucões em JavaScript dos problemas:
+No arquivo encontram-se as resoluções em JavaScript dos problemas:
  - 1172
  - 1173
  - 1174
