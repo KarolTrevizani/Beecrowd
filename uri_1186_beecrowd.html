@@ -15,23 +15,23 @@
     // var input = require('fs').readFileSync('/dev/stdin', 'utf8');
     // var lines = input.split('\n');
     // var prompt = function(texto) { return lines.shift();};
-    var oper = prompt('Qual a operacão - Soma(S) ou Media(M): ')
-    var matriz = []
+    const oper = prompt('Qual a operacão - Soma(S) ou Media(M): ')
+    const matriz = []
     // matriz
     for (i = 0; i <= 11; i++){
-        var linha = []
+        const linha = []
         for (p = 0; p <= 11; p++){
-            var n = parseFloat(prompt('Digite os elementos da linha: '))
+            let n = parseFloat(prompt('Digite os elementos da linha: '))
             linha.push(n)
         }
         matriz.push(linha)
         linha = []
     }
     // operacões
-    var soma = 0
-    var contador = 0
-    var c = 1
-    var a = 1
+    const soma = 0
+    const contador = 0
+    const c = 1
+    const a = 1
     for (l = 11; l > 0; l--){
         c = a
         for (c ; c <= 11; c++){
